@@ -74,6 +74,10 @@ plugins=(git vi-mode fzf asdf)
 
 source $ZSH/oh-my-zsh.sh
 
+
+alias clcup="taskset -c 0-8 colcon build --symlink-install --catkin-skip-building-tests --packages-up-to"
+alias clcsl="taskset -c 0-8 colcon build --symlink-install --catkin-skip-building-tests --packages-select"
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
